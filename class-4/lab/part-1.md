@@ -26,12 +26,13 @@ week4-auth-api
 4. Create `requirements.txt`:
 
 ```text
-fastapi==0.141.1
-uvicorn==0.52.4
-sqlalchemy
-passlib[bcrypt]
-bcrypt<5
-python-jose[cryptography]
+fastapi==0.141.1;
+uvicorn==0.52.4;
+sqlalchemy;
+passlib[bcrypt];
+bcrypt<5;
+pyasn1>=0.4.6;
+python-jose[cryptography];
 ```
 
 5. Install:

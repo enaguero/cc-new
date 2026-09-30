@@ -18,9 +18,9 @@ The important idea is this: FastAPI handles the web request, and SQLAlchemy hand
 2. Replace it with:
 
 ```text
-fastapi==0.141.1
-uvicorn==0.52.4
-sqlalchemy
+fastapi==0.141.1;
+uvicorn==0.52.4;
+sqlalchemy;
 ```
 
 3. Install:
@@ -206,7 +206,9 @@ http://127.0.0.1:8000/courses
 
 13. Try to create another course with the same `code`.
 
-You should get an error because `code` is unique.
+You should get an error because `code` is unique:
+
+![Error](images/week3_lab_2.png "Error")
 
 14. Stop the server with `Ctrl + C`.
 

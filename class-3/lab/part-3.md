@@ -150,6 +150,9 @@ http://127.0.0.1:8000/docs
 
 You should receive the new course with an `id`.
 
+![POST](images/week3_lab_3.1.png "POST")
+![ID](images/week3_lab_3.2.png "ID")
+
 #### Part D: Test Invalid Data
 
 9. Test `POST /courses` with:
