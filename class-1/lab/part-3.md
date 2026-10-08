@@ -94,7 +94,7 @@ routers = APIRouter()
 
 
 # This route will become /movies after we connect it in main.py.
-@routers.get("/")
+@router.get("/")
 def get_movies():
     return {"message": "Hello world from the movies router!"}
 ```
@@ -208,13 +208,13 @@ movies = {
 }
 
 
-@routers.get("/")
+@router.get("/")
 def get_movies():
     # Return all movie records.
     return movies
 
 
-@routers.get("/{movie_id}")
+@router.get("/{movie_id}")
 def get_movie(movie_id: str):
     # movie_id comes from the URL, for example /movies/hobbit.
     # We use it as a key in the movies dictionary.
@@ -290,7 +290,7 @@ from fastapi import APIRouter, HTTPException
 25. Replace the `get_movie` function with this version:
 
 ```python
-@routers.get("/{movie_id}")
+@router.get("/{movie_id}")
 def get_movie(movie_id: str):
     # .get() returns None instead of crashing if the key does not exist.
     movie = movies.get(movie_id)
